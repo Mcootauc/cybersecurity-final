@@ -1,0 +1,101 @@
+/* variables declared here - these are the colors for our pages, as well as the font stacks and sizes. */
+:root {
+    --white: #ebebf0;
+    --ltblue: #91bbf2;
+    --blueHover: #2d84d0;
+    --ltBlueBackground: #024681;
+    --blueBackground: #02315a;
+    --blueTitle: #035aa6;
+    --blueButton: #0367a6;
+    --navy: #273273;
+    --dkblue: #131a40;
+    --black: #101014;
+    --font-size: 1.3rem;
+    --montserrat: Montserrat;
+    --barlow: Barlow Condensed;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: var(--black);
+    font-family: var(--montserrat);
+    font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 500;
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+.search-form-header {
+    color: var(--blueTitle);
+    margin-top: 100px;
+    text-align: center;
+    font-size: 5em;
+}
+
+.search-input {
+    font-size: 1.5em;
+    max-width: 900px;
+    width: 60%;
+    flex-grow: 1;
+    padding: 0.5em;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: 2px solid var(--ltblue);
+    color: var(--ltblue);
+    outline: none;
+    background-color: var(--blueBackground);
+    font-family: var(--barlow);
+}
+
+.search-input:focus {
+    border: 3px solid var(--ltblue);
+}
+
+.search-button {
+    font-size: 1.5em;
+    border: 2px solid var(--ltblue);
+    color: var(--ltblue);
+    background: none;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: var(--blueBackground);
+    font-family: var(--barlow);
+}
+
+.search-button:hover {
+    background-color: var(--blueHover);
+    color: white;
+}
+
+.search-query {
+    color: var(--blueTitle);
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.query {
+    color: var(--blueTitle);
+    font-weight: normal;
+    text-decoration: underline;
+}
